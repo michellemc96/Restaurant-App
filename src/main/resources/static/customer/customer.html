@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/customer.css" rel="stylesheet">
+	
+	<title>Michelle's Take-Out</title>
+</head>
+<body>
+		<div id="header">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h1>Michelle's Take-Out</h1>
+				</div>
+				<div class="col-md-2">
+					<a id="shopping-cart-button" href="#"><span id="items-count">0</span><span class="glyphicon glyphicon-shopping-cart"></span></a>
+				</div>
+			</div>
+		</div>
+		
+			
+			<div class="container">
+			 <div id="step1" class="content">
+				<h1> &#9670; Menu &#9670; </h1>  
+				<span id="menu"></span>
+				<input type="button" name="continue"  class="btn btn-default btn-lg" value="Continue"/>
+		   	</div>
+		   	
+		   	<div id="step2" class="content">
+		   	    <h2> Shopping Cart <span class="glyphicon glyphicon-shopping-cart"></span></h2>
+			 	<div id="shopping-cart-empty"><h3>Your shopping cart is empty!</h3></div>
+			 	<div id="shopping-cart-items"></div>
+			 	<div id="total"> Total:<span id="shopping-cart-total"> $0.00</span></div>
+			 	<input type="button" name="clear" class="btn btn-warning btn-lg" value="Clear All"/>
+			 	<input type="button" name="editOrder" class="btn btn-default btn-lg" value="Edit Order"/>
+			 	<input type="button" name="confOrder" class="btn btn-default btn-lg" value="Confirm Order"/>
+			 	
+			</div>
+		   	
+		   <div id="step3" class="content">
+				<h1 class="center"> &#9670; Order Information &#9670; </h1>  
+				<br>
+	
+				<form id="order">
+				<div class="row"> 
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="row center">
+							<h2>Please choose an order type:</h2>
+							<label class="radio-inline">
+								<input type="radio" name="order_type" value="delivery"> Delivery
+							</label>
+							<label class="radio-inline">
+								<input type="radio"  name="order_type" value="pick-up"> Pick-up
+							</label>
+						</div>
+						<br>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Full name:
+						    </div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" name="name" required>
+							</div>
+						</div>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Address1:
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" name="address1" required>
+							</div>
+						</div>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Address2:
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" name="address2">
+							</div>
+						</div>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								City:
+							</div>
+							<div class="col-md-3">
+								<input type="text" class="form-control" name="city" size="10" required>
+							</div>						
+							<div class="col-md-1  right">					
+								State:
+							</div>
+							<div class="col-md-2">
+								<input type="text" class="form-control" name="state" size="2" required>
+							</div>						
+						</div>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Email:
+							</div>
+							<div class="col-md-7">
+								<input type="email" class="form-control" name="email"  required>
+							</div>
+						</div>
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Phone number:
+							</div>
+							<div class="col-md-7">
+								<input type="tel" class="form-control" name="tel" required>
+							</div>
+						</div>
+						
+						<div class="row extra-space">
+							<div class="col-md-3 right">
+								Payment Type: 
+							</div>
+							<div class="col-md-7">
+								<label class="radio-inline"><input type="radio"  name="payment" value="cash">Cash</label>
+								<label class="radio-inline"><input type="radio"  name="payment" value="debit/credit">Debit/Credit Card</label>
+							</div>
+						</div>
+						
+			
+					<div class="col-md-2"></div>
+						<div id="orderbtn" >
+							<input type="button" class="btn btn-default btn-lg" name="cancel" value="Cancel"/>
+							<button type="submit" name="order" class="btn btn-default btn-lg">Order Now!</button>
+					    </div>
+			     </div>
+			  </div>
+			     </form>
+			</div>
+		
+				 
+		     <div id="step4" class="content">
+				<h2>Thank you!</h2>  
+				<p>Your order has been confirmed. You will receive a confirmation email within 5 minutes.</p>
+			    <input type="button" name="home" class="btn btn-default btn-lg" value="Home"/>
+			 </div>
+		 </div>
+	
+			
+			
+			<script src="/js/jquery-1.12.4.min.js"></script>
+			<script src="/js/jquery.serializeObject.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/customer.js"></script>
+</body>
+</html> 

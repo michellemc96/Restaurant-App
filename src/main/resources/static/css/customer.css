@@ -1,0 +1,131 @@
+h1 {
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	color: black;
+	font-size: 30px;
+}
+
+p {
+	font-size: 20px;
+}
+
+#header a {
+	float: right;
+    color: white;
+    font-size: 50px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#step1 {}
+
+#step2 {
+	
+	display: none;
+} 
+
+#step3 {
+	 display: none;
+	 width: 65%;
+	 text-align: center;
+	 font-size: 20px;
+	 margin: auto;
+}
+
+#step4 {
+	display: none;
+}
+
+
+button{
+    background-color: white ;
+    border-radius: 50%;
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+}
+
+body {
+	background-image: url('/images/pizza.jpg');
+	background-repeat: no-repeat;	
+	background-position: center;	
+	background-size: cover;
+	min-height: 100vh;
+}
+
+.content {
+	
+	color: black;
+	border: 10px solid #111111;                    
+	background-color: white;                                                             
+	text-align: center; 
+	background: rgba(255, 255, 255, 0.5);	
+}
+    
+                                                               
+.menu_item h2{
+	font-size: 24px;
+	text-align: left;
+	font-weight: bold;
+}   
+  
+.menu_item {
+	font-size: 20px;
+	text-align: left;
+	border-bottom: 2px  solid #111111;
+}
+	
+#header h1 {
+	font-size: 40px;
+	padding: 10px;
+	margin: 0px auto;
+    font-family: 'Ranchers', cursive;
+ }
+ 
+.button {
+	padding-top: 50px;
+}	
+
+img.food {
+	padding: 5px;
+}
+
+input[name="continue"] {
+	padding: 20px;
+}
+input[name="clear"] {
+	
+	margin-bottom: 1px;
+}
+#shopping-cart-empty {
+	display: none;
+}
+#shopping-cart-total, #total {
+	font-size: 30px;
+}
+
+#orderbtn {
+	text-align: center;
+	border-radius: 50%;
+}
+
+
+.form-control {
+	margin-left: 15px;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.extra-space {
+	padding-bottom: 0.6em;
+}

@@ -1,0 +1,22 @@
+.container {
+	border: 3px solid black;
+	background-color: white;                                                             
+	background: rgba(255, 255, 255, 0.5);
+		
+}
+.box {
+	border: 2px solid black;
+	background-color: white;   
+}
+body {
+	background-image: url('/images/pizza.jpg');
+	background-repeat: no-repeat;	
+	background-position: center;	
+	background-size: cover;
+	min-height: 100vh;
+}
+#ready {
+	width: 50%;
+}
+
+
